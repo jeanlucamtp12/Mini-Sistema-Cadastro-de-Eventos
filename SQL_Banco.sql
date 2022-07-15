@@ -1,0 +1,16 @@
+CREATE DATABASE evento ;
+
+CREATE TABLE infos(
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(120)NOT NULL,
+    descricao VARCHAR(500) NOT NULL,
+    dataInicio DATE NOT NULL,
+    dataFim DATE NOT NULL,
+    tipo VARCHAR(100) NOT NULL,
+    possui VARCHAR(5) NOT NULL,
+    imagem VARCHAR(100)
+);
+
+
+INSERT INTO infos (nome, descricao, dataInicio, dataFim, tipo, possui, imagem) VALUES ('Dança das Clefarys','Em noites de lua cheia, Clefairies de todo lugar se reúnem e dançam. Banhar-se na luz do luar as faz flutuar.', '2022-08-02', '2022-08-02', 'Comemoração', 'nulo', '../img/5c4c6400039d76fed2a10a8fe1903c97.jpg'), ('Canto dos Jigglypuff','Jigglypuff tem capacidade pulmonar de alto nível, mesmo em comparação com outros Pokémon. Ele não vai parar de cantar suas canções de ninar até que seus espectadores adormeçam.','2022-08-10','2022-08-11','Festa temática','wb','../img/9e272670775f0abd200a52904fc45c1c.jpg'), ('Festa do sono','Slowpokes pegam a presa mergulhando a cauda na água ao lado de um rio. Mas muitas vezes esquece o que está fazendo e passa dias inteiros apenas vagando à beira da água.','2022-10-04','2022-11-02','Apreciação','web','../img/fd68925f2a77810157da640b7de6ed95.jpg'), ('Evento para aguardar o inicio da primavera','Hoppips são levados à deriva pelos ventos. Diz-se que quando  se reúne em campos e montanhas, a primavera está a caminho.','2022-10-12','2022-10-12','Mudanças climáticas ','e','../img/5addabeb2ecc316e9dfe5201719bd4fb.jpg'), ('Evento a procura de águas limpas','Corsolas vivem nos mares limpos do sul. Eles aparentemente não podem viver em águas poluídas.','2022-07-20','2022-07-21','Exploração','eb','../img/fd9c57f7d97b053bd7479a764296374e.jpg'), ('Evento para criação de perfumes','O cheiro exalado pelos Aromatisses é tão avassalador que, a menos que um Treinador realmente goste do cheiro, ele ou ela terá dificuldade em caminhar ao lado dele.','2022-07-20','2022-07-21','Degustação','web','../img/19c3ff45e43d2c5377caf9404be5a6ea.jpg'), ('Minicurso confecção de doces com os Slurpuffs','Slurpuffs podem distinguir o mais fraco dos aromas. Ele usa seu olfato sensível para ajudar os confeiteiros em seu trabalho.','2022-07-19','2022-07-19','Minicurso','wb','../img/f6c3c07cd9374f3a6c0f40f3132dde9b.jpg'), ('Minicurso de primeiros socorros','Blisseys são bondosos e cuida dos doentes, dando lhes de volta à saúde. Ele sente sentimentos de tristeza.','2022-07-27','2022-07-28','Minicurso','web','../img/06d25ede50bad6a22a1b081ce18cbe9f.jpg'), ('Aulas de furto','Os Espeons podem prever o futuro, devido a isso eles são os Pokémons preferidos dos ladrões','2022-07-05','2022-07-06','Curso','we','../img/03034b6fe2df24492dc070b1fa921036.jpg'), ('Adestramento de animais com os Skittys','Diz-se que é difícil ganhar a confiança dos Skittys. No entanto, é extremamente popular por sua aparência e comportamento fofos.','2022-07-06','2022-07-08','Curso','nulo','../img/efe8d74c520e4f5bdd60a22303b5be7d.jpg'), 
+('Encontro de Vivillons','Vivillon com muitos padrões diferentes são encontrados em todo o mundo. Esses padrões são afetados pelo clima de seu habitat.','2022-07-07','2022-07-09','Festinha','e','../img/570ed9d32f69ebe2d396b3c293a2c122.jpg')

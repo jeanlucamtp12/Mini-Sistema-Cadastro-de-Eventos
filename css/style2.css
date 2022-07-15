@@ -1,0 +1,75 @@
+nav {
+    background-color: #000000a1;
+    text-align: center;
+    transform: scale(1.0);
+
+}
+
+body {
+    background-image: url('../img/fundoEsc.jpg');
+}
+
+p {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    
+     width: 300px;
+      margin-left: auto;
+    margin-right: auto;
+  
+    
+
+
+    
+}
+
+
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+#estilo {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+
+}
+
+#circle {
+    background-color: #aaa;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+
+
+}
+
+
+#meio {
+    color: #ffffff;
+    font-weight: bold;
+    
+}
+
+#num_centro {
+    color: #000000;
+    font-weight: bold;
+    background-color: #81126d;
+    
+}

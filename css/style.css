@@ -1,0 +1,110 @@
+/*geral*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border : none;
+    font-family: Helvetica, sans-serif;
+
+}
+
+body {
+    padding-top: 0vh;
+    background: linear-gradient(#003a61, #FFFFFF) no-repeat;
+    margin: 0px;
+    background-image: url('../img/fundo2.jpg');
+    background-size: cover;
+    
+}
+
+.box {
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	border: 1px solid #000;
+	margin: auto;
+	text-align: center;
+}
+
+a{
+    color:#ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 40px;
+    padding: 7px 10px;
+    margin: 05px;
+    background-color: #81126d;
+    color: #FFF;
+    border-radius: 90px;
+    text-decoration: none;
+
+
+}
+p{
+    color:#ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+#container h1{
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+    color: #81126d;
+        
+    
+}
+
+nav{
+    background-color: #220032ad;
+    text-align: center;
+    transform: scale(1.0);
+
+}
+
+#container{
+    width: 500px;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 25px;
+    margin-left: auto;
+    background-color: #ffffff;
+    margin-right: auto;
+    
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+label{
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+input{
+    border-bottom: 2px solid #610044;
+    padding: 08px;
+    font-size: .8rem ;
+    margin-bottom: 0px;
+}
+
+input:focus{
+    border-color:#610057;
+}
+
+input[type="submit"]{
+    background-color: #940082;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    height: 30px;
+    width: 450px;
+
+}

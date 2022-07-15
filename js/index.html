@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<script>
+    //função javascript para validar os dados digitados 
+    function validar() {
+
+        var nome = document.getElementById('nome').value.trim();
+        var descricao = document.getElementById('descrição').value.trim();
+        var dataI = document.getElementById('dataI').value.trim();
+        var dataE = document.getElementById('dataE').value.trim();
+        var tipo = document.getElementById('tipo').value.trim();
+        var wifi = document.getElementById('wifi').value.trim();
+        var estacionamento = document.getElementById('estacionamento').value.trim();
+        var bebida = document.getElementById('bebida').value.trim();
+        var imagem = document.getElementById('img').value;
+
+
+        if (nome == "") {
+            alert("Digite um valor para o campo \"Nome\".");
+            formulario.nome.focus();
+            return false;
+        } if (descricao == "") {
+            alert("Digite um valor para o campo \"Descrição do Evento\".");
+            formulario.descrição.focus();
+            return false;
+        } if (dataI == "") {
+            alert("Digite um valor para o campo \"Data de Inicio\".");
+            formulario.dataI.focus();
+            return false;
+        } if (dataE == "") {
+            alert("Digite um valor para o campo \"Data de Encerramento\".");
+            formulario.dataE.focus();
+            return false;
+        } if (tipo == "") {
+            alert("Digite um valor para o campo \"Tipo do Evento\".");
+            formulario.tipo.focus();
+            return false;
+        } if (imagem == "") {
+            alert("Carregue uma imagem em: \"Banner do Evento\".");
+            formulario.img.focus();
+            return false;
+        } else {
+            return true;
+        }
+
+
+    }
+</script>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Eventos</title>
+
+</head>
+
+<body>
+
+    <nav>
+      
+        <div class="link">
+            
+            <a href="index.html">Cadastro de Eventos</a>
+            <a href="cadastros.php">Eventos Cadastrados</a>
+        </div>
+    </nav>
+
+    <div id="container">
+
+        <h1>Cadastro de Evento</h1>
+
+        <form action='main.php' method="POST" enctype="multipart/form-data" name='formulario' onsubmit="return validar(this)">
+            <div>
+                <label for="nome">Nome do Evento:</label>
+                <input type="text" id="nome" name="nome" /> <br></br>
+            </div>
+            <div>
+                <label for="descrição">Descrição do Evento:</label>
+                <input type="text" id="descrição" name="descrição" /> <br></br>
+            </div>
+            <div>
+                <label for="dataI">Data de Inicio:</label>
+                <input type="date" id="dataI" name="dataI" /> <br></br>
+            </div>
+            <div>
+                <label for="dataE">Data de Encerramento:</label>
+                <input type="date" id="dataE" name="dataE" /> <br></br>
+            </div>
+            <div>
+                <label for="tipo">Tipo do Evento:</label>
+                <input type="text" id="tipo" name="tipo" /> <br></br>
+            </div>
+
+            <div>
+                <label for="img">Banner do Evento:</label>
+                <input type="file" id="img" name="img" accept="image/*"> <br></br>
+            </div>
+
+            <fieldset>
+                <legend>O Evento Possui:</legend>
+                <div>
+                    <input type="checkbox" id="wifi" name="wifi" value="wifi">
+                    <label for="wifi"> WIFI </label>
+                </div>
+                <div>
+                    <input type="checkbox" id="estacionamento" name="estacionamento" value="estacionamento">
+                    <label for="estacionamento">Estacionamento grátis</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="bebida" name="bebida" value="bebida">
+                    <label for="bebida">Bebida grátis</label>
+                </div>
+
+            </fieldset>
+
+            <div>
+                <label><input type="submit" name="botao" value="Enviar" /></label></p>
+            </div>
+
+    </div>
+
+    </form>
+
+    <div>
+        <p id="dados"></p>
+    </div>
+
+</body>
+
+</html>
